@@ -1,19 +1,136 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portifólio Erickson de Quadros</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfólio - Erickson de Quadros</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fefefe;
+      margin: 0;
+      padding: 20px;
+    }
+    h1, h2 {
+      color: #333;
+    }
+    hr {
+      margin: 20px 0;
+    }
+    .tech-icons img {
+      margin: 5px;
+    }
+    .projects ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    .projects li {
+      background-color: #eaeaea;
+      margin: 8px 0;
+      padding: 10px;
+      border-radius: 6px;
+    }
+    .social-links img {
+      margin-right: 10px;
+    }
+  </style>
 </head>
-
 <body>
-    <h1>Teste</h1>
-</body>
 
+  <h1>👋 Olá turma! Eu sou Erickson de Quadros</h1>
+  <hr />
+
+  <ul>
+      
+    <li>🔭 Atualmente trabalhando com projetos Back-End</li>
+    <li>🌱 Estudando arquitetura de software em Cloud</li>
+
+  </ul>
+
+  <hr />
+
+  <h2>📊 Estatísticas do GitHub</h2>
+
+  <picture>
+    <source
+      srcset="https://github-readme-stats.vercel.app/api?username=Erickson-de-Quadros-s&show_icons=true&theme=dark"
+      media="(prefers-color-scheme: dark)"
+    />
+    <source
+      srcset="https://github-readme-stats.vercel.app/api?username=Erickson-de-Quadros-s&show_icons=true"
+      media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)"
+    />
+    <img src="https://github-readme-stats.vercel.app/api?username=Erickson-de-Quadros-s&show_icons=true" />
+  </picture>
+
+  <picture>
+    <source
+      srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=Erickson-de-Quadros-s&layout=compact&theme=dark"
+      media="(prefers-color-scheme: dark)"
+    />
+    <source
+      srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=Erickson-de-Quadros-s&layout=compact"
+      media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)"
+    />
+    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Erickson-de-Quadros-s&layout=compact" />
+  </picture>
+
+  <hr />
+
+  <h2>🧰 Tecnologias e Ferramentas</h2>
+
+  <div class="tech-icons">
+    <img alt="HTML" height="30" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg">
+    <img alt="CSS" height="30" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg">
+    <img alt="JavaScript" height="30" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg">
+    <img alt="TypeScript" height="30" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-plain.svg">
+    <img alt="C#" height="30" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg">
+    <img alt="GitLab" height="30" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/gitlab/gitlab-original-wordmark.svg">
+    <img alt="RabbitMQ" height="30" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/rabbitmq/rabbitmq-original.svg">
+    <img alt="AWS" height="30" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg">
+    <img alt="MongoDB" height="30" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original.svg">
+    <img alt="SQL Server" height="30" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/microsoftsqlserver/microsoftsqlserver-plain-wordmark.svg">
+    <img alt="Redis" height="30" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/redis/redis-original.svg">
+    <img alt="Python" height="30" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg">
+  </div>
+
+  <hr />
+
+  <h2>📂 Projetos</h2>
+
+  <div class="projects">
+    <ul>
+      <li><strong>MicroServicos-Restaurante</strong> - Arquitetura de microsserviços com .NET, RabbitMQ, Docker</li>
+      <li><strong>API-Login-Help-Chain</strong> - API NestJS com Autenticação JWT</li>
+      <li><strong>Lambda-Upload-S3</strong> - Lambda AWS com S3 em Python</li>
+      <li><strong>ECommerceLambda</strong> - API Lambda com SQS e S3</li>
+      <li><strong>AprovarPedidoLambda</strong> - Lambda AWS com SQS</li>
+      <li><strong>ProcessarPedidoPago</strong> - Lambda AWS com  DynamoDB</li>
+      <li><strong>DevFreelaAPI-with-CQRS</strong> - Projeto com CQRS</li>
+      <li><strong>Arquitetura-Limpa-com-ASP.NET-Core</strong> - Aplicação com Clean Architecture</li>
+      <li><strong>HangFireProjectScheduler</strong> - Projeto com agendador HangFire</li>
+      <li><strong>Acesso-a-Dados-com-Entity-Framework-Core</strong> - Projeto com EF Core</li>
+      <li><strong>API-Library / API-Library-ORM</strong> - API REST com ORM</li>
+    </ul>
+  </div>
+
+  <hr />
+
+  <h2>🌐 Redes Sociais</h2>
+  <div class="social-links">
+    <a href="https://www.linkedin.com/in/erickson-de-quadros-cz/" target="_blank">
+      <img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white">
+    </a>
+    <a href="https://www.facebook.com/erickson.dequadros" target="_blank">
+      <img src="https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white">
+    </a>
+    <a href="https://instagram.com/erickson.quadros" target="_blank">
+      <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white">
+    </a>
+  </div>
+
+  <br />
+  <img src="https://img.shields.io/github/repo-size/Erickson-de-quadros-s/erickson-de-quadros-s" alt="Tamanho do repositório no GitHub" />
+
+</body>
 </html>
