@@ -1,15 +1,16 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Portfólio - Erickson de Quadros</title>
+  <meta name="description" content="Portfólio de Erickson de Quadros - desenvolvedor back-end com foco em .NET, microsserviços e soluções em nuvem." />
+  <title>Portfolio - Erickson de Quadros</title>
   <style>
     body {
       font-family: Arial, sans-serif;
       background-color: #fefefe;
-      margin: 0;
+      margin: auto;
       padding: 20px;
+      max-width: 960px;
     }
     h1, h2 {
       color: #333;
@@ -39,81 +40,243 @@
       display: block;
       margin-bottom: 10px;
     }
+    #langSelector {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background-color: #fefefe;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    border-radius: 6px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    z-index: 1000;
+  }
+  
+  #langSelector img.flag {
+    width: 20px;
+    height: 14px;
+    vertical-align: middle;
+    border-radius: 2px;
+  }
+  
+  #language {
+    display: none;
+  }
+  
+  #langList {
+    display: flex;
+    gap: 10px;
+  }
+  
+  #langList div {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+    padding: 2px 5px;
+    border-radius: 4px;
+  }
+  
+  #langList div:hover {
+    background-color: #ddd;
+    transition: background-color 0.2s ease;
+  }
+  
+    
   </style>
 </head>
 <body>
 
-  <img src="https://github.com/Erickson-de-Quadros-s.png" alt="Erickson de Quadros" class="profile-pic" />
-  <h1>👋 Olá turma! Eu sou Erickson de Quadros</h1>
-  <hr />
-  <h2>📚 Sobre Mim</h2>
-  <p>
-    Sou apaixonado por tecnologia e desenvolvimento de software, com foco em soluções Back-End escaláveis e performáticas. Atualmente trabalho com projetos que envolvem .NET, arquitetura baseada em microsserviços, mensageria com RabbitMQ e integração contínua.
-  </p>
-  <p>
-    Estou em busca de evolução profissional e pessoal — atualmente estudando <strong>Arquitetura de Software em Cloud</strong> e aprimorando meu <strong>inglês técnico e conversacional</strong> para ampliar meus conhecimentos.
-  </p>
-  <p>
-    Me considero uma pessoa colaborativa, comprometida com entregas de qualidade, que gosta de compartilhar conhecimento e enfrentar desafios técnicos que promovam inovação e impacto positivo nos projetos.
-  </p>
+
+<div id="langSelector">
+  <div id="langList">
+    <div onclick="setLanguage('en')">
+      <img src="https://flagcdn.com/us.svg" class="flag" />
+      EN
+    </div>
+    <div onclick="setLanguage('pt')">
+      <img src="https://flagcdn.com/br.svg" class="flag" />
+      PT
+    </div>
+  </div>
+</div>
+
+
+  <!-- #####                        English Content ####                        -->
+  <div id="content-en">
+    <img src="https://github.com/Erickson-de-Quadros-s.png" alt="Erickson de Quadros" class="profile-pic" />
+    <h1>👋 Hello everyone! I'm Erickson de Quadros</h1>
+    <hr />
+    <h2>📚 About Me</h2>
+    <p>
+      I am passionate about technology and software development, focusing on scalable and performant Back-End solutions. Currently, I work on projects involving .NET, microservices architecture, messaging with RabbitMQ, and continuous integration.
+    </p>
+    <p>
+      I am looking for professional and personal growth — currently studying <strong>Cloud Software Architecture</strong> and improving my <strong>technical and conversational English</strong> to broaden my knowledge.
+    </p>
+    <p>
+      I consider myself collaborative, committed to quality deliveries, and someone who enjoys sharing knowledge and facing technical challenges that promote innovation and positive impact on projects.
+    </p>
+
+    <hr />
+
+    <h2>🧰 Technologies and Tools</h2>
+
+    <div class="tech-icons">
+      <img alt="HTML" height="30" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg">
+      <img alt="CSS" height="30" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg">
+      <img alt="JavaScript" height="30" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg">
+      <img alt="TypeScript" height="30" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-plain.svg">
+      <img alt="C#" height="30" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg">
+      <img alt="GitLab" height="30" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/gitlab/gitlab-original-wordmark.svg">
+      <img alt="RabbitMQ" height="30" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/rabbitmq/rabbitmq-original.svg">
+      <img alt="AWS" height="30" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg">
+      <img alt="MongoDB" height="30" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original.svg">
+      <img alt="SQL Server" height="30" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/microsoftsqlserver/microsoftsqlserver-plain-wordmark.svg">
+      <img alt="Redis" height="30" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/redis/redis-original.svg">
+      <img alt="Python" height="30" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg">
+    </div>
+
+    <hr />
+
+    <h2>📂 Projects</h2>
+
+    <div class="projects">
+      <ul>
+        <li><strong>MicroServices-Restaurant</strong> - Microservices architecture with .NET, RabbitMQ, Docker</li>
+        <li><strong>API-Login-Help-Chain</strong> - NestJS API with JWT Authentication</li>
+        <li><strong>Lambda-Upload-S3</strong> - AWS Lambda with S3 in Python</li>
+        <li><strong>ECommerceLambda</strong> - Lambda API with SQS and S3</li>
+        <li><strong>ApproveOrderLambda</strong> - AWS Lambda with SQS</li>
+        <li><strong>ProcessPaidOrder</strong> - AWS Lambda with DynamoDB</li>
+        <li><strong>DevFreelaAPI-with-CQRS</strong> - CQRS project</li>
+        <li><strong>CleanArchitecture-with-ASP.NET-Core</strong> - Clean Architecture application</li>
+        <li><strong>HangFireProjectScheduler</strong> - Project with HangFire scheduler</li>
+        <li><strong>DataAccess-with-Entity-Framework-Core</strong> - EF Core project</li>
+        <li><strong>API-Library / API-Library-ORM</strong> - REST API with ORM</li>
+      </ul>
+    </div>
+
+    <hr />
+
+    <h2>🌐 Social Networks</h2>
+    <div class="social-links">
+      <a href="https://www.linkedin.com/in/erickson-de-quadros-cz/" target="_blank">
+        <img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn">
+      </a>
+      <a href="https://www.facebook.com/erickson.dequadros" target="_blank">
+        <img src="https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white" alt="Facebook">
+      </a>
+      <a href="https://instagram.com/erickson.quadros" target="_blank">
+        <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram">
+      </a>
+    </div>
+
+    <br />
+    <img src="https://img.shields.io/github/repo-size/Erickson-de-quadros-s/erickson-de-quadros-s" alt="GitHub repo size" />
+  </div>
+
+  <!--       #####                       Portuguese Content              ####      -->
+  <div id="content-pt" style="display:none;">
+    <img src="https://github.com/Erickson-de-Quadros-s.png" alt="Erickson de Quadros" class="profile-pic" />
+    <h1>👋 Olá turma! Eu sou Erickson de Quadros</h1>
+    <hr />
+    <h2>📚 Sobre Mim</h2>
+    <p>
+      Sou apaixonado por tecnologia e desenvolvimento de software, com foco em soluções Back-End escaláveis e performáticas. Atualmente trabalho com projetos que envolvem .NET, arquitetura baseada em microsserviços, mensageria com RabbitMQ e integração contínua.
+    </p>
+    <p>
+      Estou em busca de evolução profissional e pessoal — atualmente estudando <strong>Arquitetura de Software em Cloud</strong> e aprimorando meu <strong>inglês técnico e conversacional</strong> para ampliar meus conhecimentos.
+    </p>
+    <p>
+      Me considero uma pessoa colaborativa, comprometida com entregas de qualidade, que gosta de compartilhar conhecimento e enfrentar desafios técnicos que promovam inovação e impacto positivo nos projetos.
+    </p>
+
+    <hr />
+
+    <h2>🧰 Tecnologias e Ferramentas</h2>
+
+    <div class="tech-icons">
+      <img alt="HTML" height="30" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg">
+      <img alt="CSS" height="30" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg">
+      <img alt="JavaScript" height="30" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg">
+      <img alt="TypeScript" height="30" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-plain.svg">
+      <img alt="C#" height="30" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg">
+      <img alt="GitLab" height="30" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/gitlab/gitlab-original-wordmark.svg">
+      <img alt="RabbitMQ" height="30" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/rabbitmq/rabbitmq-original.svg">
+      <img alt="AWS" height="30" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg">
+      <img alt="MongoDB" height="30" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original.svg">
+      <img alt="SQL Server" height="30" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/microsoftsqlserver/microsoftsqlserver-plain-wordmark.svg">
+      <img alt="Redis" height="30" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/redis/redis-original.svg">
+      <img alt="Python" height="30" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg">
+    </div>
+
+    <hr />
+
+    <h2>📂 Projetos</h2>
+
+    <div class="projects">
+      <ul>
+        <li><strong>MicroServices-Restaurant</strong> - Arquitetura de microsserviços com .NET, RabbitMQ, Docker</li>
+        <li><strong>API-Login-Help-Chain</strong> - API NestJS com autenticação JWT</li>
+        <li><strong>Lambda-Upload-S3</strong> - AWS Lambda com S3 em Python</li>
+        <li><strong>ECommerceLambda</strong> - API Lambda com SQS e S3</li>
+        <li><strong>ApproveOrderLambda</strong> - AWS Lambda com SQS</li>
+        <li><strong>ProcessPaidOrder</strong> - AWS Lambda com DynamoDB</li>
+        <li><strong>DevFreelaAPI-with-CQRS</strong> - Projeto CQRS</li>
+        <li><strong>CleanArchitecture-with-ASP.NET-Core</strong> - Aplicação Clean Architecture</li>
+        <li><strong>HangFireProjectScheduler</strong> - Projeto com agendamento HangFire</li>
+        <li><strong>DataAccess-with-Entity-Framework-Core</strong> - Projeto EF Core</li>
+        <li><strong>API-Library / API-Library-ORM</strong> - API REST com ORM</li>
+      </ul>
+    </div>
+
+    
+    <hr />
+
+    <h2>🌐 Redes Sociais</h2>
+    <div class="social-links">
+      <a href="https://www.linkedin.com/in/erickson-de-quadros-cz/" target="_blank">
+        <img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn">
+      </a>
+      <a href="https://www.facebook.com/erickson.dequadros" target="_blank">
+        <img src="https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white" alt="Facebook">
+      </a>
+      <a href="https://instagram.com/erickson.quadros" target="_blank">
+        <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram">
+      </a>
+    </div>
+
+    <br />
+    <img src="https://img.shields.io/github/repo-size/Erickson-de-quadros-s/erickson-de-quadros-s" alt="GitHub repo size" />
+  </div>
+
+  <script>
+    function setLanguage(lang) {
+      const en = document.getElementById("content-en");
+      const pt = document.getElementById("content-pt");
   
-
-  <hr />
-
-  <h2>🧰 Tecnologias e Ferramentas</h2>
-
-  <div class="tech-icons">
-    <img alt="HTML" height="30" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg">
-    <img alt="CSS" height="30" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg">
-    <img alt="JavaScript" height="30" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg">
-    <img alt="TypeScript" height="30" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-plain.svg">
-    <img alt="C#" height="30" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg">
-    <img alt="GitLab" height="30" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/gitlab/gitlab-original-wordmark.svg">
-    <img alt="RabbitMQ" height="30" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/rabbitmq/rabbitmq-original.svg">
-    <img alt="AWS" height="30" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg">
-    <img alt="MongoDB" height="30" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original.svg">
-    <img alt="SQL Server" height="30" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/microsoftsqlserver/microsoftsqlserver-plain-wordmark.svg">
-    <img alt="Redis" height="30" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/redis/redis-original.svg">
-    <img alt="Python" height="30" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg">
-  </div>
-
-  <hr />
-
-  <h2>📂 Projetos</h2>
-
-  <div class="projects">
-    <ul>
-      <li><strong>MicroServicos-Restaurante</strong> - Arquitetura de microsserviços com .NET, RabbitMQ, Docker</li>
-      <li><strong>API-Login-Help-Chain</strong> - API NestJS com Autenticação JWT</li>
-      <li><strong>Lambda-Upload-S3</strong> - Lambda AWS com S3 em Python</li>
-      <li><strong>ECommerceLambda</strong> - API Lambda com SQS e S3</li>
-      <li><strong>AprovarPedidoLambda</strong> - Lambda AWS com SQS</li>
-      <li><strong>ProcessarPedidoPago</strong> - Lambda AWS com DynamoDB</li>
-      <li><strong>DevFreelaAPI-with-CQRS</strong> - Projeto com CQRS</li>
-      <li><strong>Arquitetura-Limpa-com-ASP.NET-Core</strong> - Aplicação com Clean Architecture</li>
-      <li><strong>HangFireProjectScheduler</strong> - Projeto com agendador HangFire</li>
-      <li><strong>Acesso-a-Dados-com-Entity-Framework-Core</strong> - Projeto com EF Core</li>
-      <li><strong>API-Library / API-Library-ORM</strong> - API REST com ORM</li>
-    </ul>
-  </div>
-
-  <hr />
-
-  <h2>🌐 Redes Sociais</h2>
-  <div class="social-links">
-    <a href="https://www.linkedin.com/in/erickson-de-quadros-cz/" target="_blank">
-      <img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white">
-    </a>
-    <a href="https://www.facebook.com/erickson.dequadros" target="_blank">
-      <img src="https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white">
-    </a>
-    <a href="https://instagram.com/erickson.quadros" target="_blank">
-      <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white">
-    </a>
-  </div>
-
-  <br />
-  <img src="https://img.shields.io/github/repo-size/Erickson-de-quadros-s/erickson-de-quadros-s" alt="Tamanho do repositório no GitHub" />
+      if (lang === "pt") {
+        en.style.display = "none";
+        pt.style.display = "block";
+      } else {
+        en.style.display = "block";
+        pt.style.display = "none";
+      }
+    }
+  
+    document.addEventListener("DOMContentLoaded", function () {
+      setLanguage("en");
+    });
+  </script>
+  
+  
+  
 
 </body>
 </html>
+
